@@ -92,7 +92,15 @@ cd ./dev2/
 nix flake show
 ```
 ---
-
+# Let's do some development in dev2
+```bash
+cd dev2/
+nix develop
+java --version
+node --version
+gradle --version
+```
+---
 # Can I build my gradle project with Nix?
 Gradle is not a functional build system. Gradle produces highly variable output because there is variation on:
 
@@ -111,7 +119,9 @@ There are projects underway to build tooling to make them "pure".
 However, they rely on an extra lock file and pre-deriving all the dependencies and all but one is mostly abandonded.
 
 ```bash
-cat ./dev3/flake.nix
+cd dev3/
+nix flake show
+cat ./flake.nix
 ```
 ---
 
