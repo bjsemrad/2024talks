@@ -13,7 +13,7 @@
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
           jdk
-          nodejs_18
+          nodejs
           gradle-pkg
         ];
       };

@@ -182,8 +182,28 @@ most tools, by implementing a methodology for performing reproducible builds and
 providing you with an expression language to define the build.
 
 ---
-  - Cross compilation for any architecture using pkgsCross
 
+# What else?
 
-# Questions?
+Direnv is a tool that alot of you might use to setup your path in the shell, we can make it flake away on a system with nix.
+```bash
+cd dev4/
+```
+---
+
+# How about compling other cpu architecture formats?
+Nix can do that too!
+
+Cross compilation for any architecture using pkgsCross
+```bash
+cd cross
+nix build nixpkgs\#pkgsCross.riscv64.cowsay --rebuild
+
+file ./result/bin/cowsay
+./result/bin/cowsay "I'm a Riscv Binary"
+```
+---
+# Thats about all I have time for....Questions?
 Find me after!
+
+If there is extra time, we can take some questions.
