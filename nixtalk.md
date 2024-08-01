@@ -191,6 +191,8 @@ Direnv is a tool that alot of you might use to setup your path in the shell, we 
 ```bash
 cd dev4/
 ```
+We will be dropped into a shell with java, node, gradle, and intellij community!
+
 ---
 
 # How about compling other cpu architecture formats?

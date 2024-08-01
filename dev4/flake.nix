@@ -15,6 +15,7 @@
           jdk
           nodejs
           gradle-pkg
+          jetbrains.idea-community-bin
         ];
       };
 
