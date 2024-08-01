@@ -1,3 +1,15 @@
 **/result/
 **/result/*
-**/result-man/
+**/result-man/*
+dev1/result
+dev1/result/*
+dev2/result
+dev2/result/*
+dev3/result
+dev3/result/*
+dev4/result
+dev4/result/*
+cross/result
+cross/result-man
+docker/result
+docker/result/*
