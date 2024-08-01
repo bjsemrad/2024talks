@@ -14,7 +14,7 @@
             jdk
             nodejs_18
             (callPackage gradle-packages.gradle_8 {
-              # java = jdk;
+              java = jdk;
             })
           ];
         };
