@@ -126,7 +126,9 @@ cat ./flake.nix
 ---
 
 # Let's build it!
-```bach
+App Code, let's take a look.
+
+```bash
 cd dev3/
 nix build
 ./result/bin/app
