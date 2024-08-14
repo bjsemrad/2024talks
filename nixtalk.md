@@ -187,7 +187,7 @@ providing you with an expression language to define the build.
 
 # What else?
 
-Direnv is a tool that alot of you might use to setup your path in the shell, we can make it flake away on a system with nix.
+Direnv is a tool that alot of you might use to setup your path in the shell, we can make it flake aware on a system with nix.
 ```bash
 cd dev4/
 ```
