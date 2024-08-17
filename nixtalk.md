@@ -113,10 +113,11 @@ Gradle is not a functional build system. Gradle produces highly variable output 
 ---
 
 # But...we can cheat a bit!
-
 We can enable "impure" derivations, which I have done on this system.
 There are projects underway to build tooling to make them "pure".
 However, they rely on an extra lock file and pre-deriving all the dependencies and all but one is mostly abandonded.
+
+Nix does all of its builds offline to ensure that we download and verify dependencies byte-for-byte before a build is done, essentially establishing a clean room every time.
 
 ```bash
 cd dev3/

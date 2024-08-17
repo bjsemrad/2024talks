@@ -5,7 +5,7 @@
   outputs = { self, nixpkgs }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { system = "${system}"; };
+      pkgs = import nixpkgs { system = "${system}"; config.allowUnfree = true; };
       jdk = pkgs.jdk17;
       gradle-pkg = (pkgs.callPackage pkgs.gradle-packages.gradle_8 { java = jdk; });
     in
@@ -16,6 +16,9 @@
           nodejs
           gradle-pkg
           jetbrains.idea-community-bin
+          apacheKafka_3_4
+          awscli2
+          vault-bin
         ];
       };
 
